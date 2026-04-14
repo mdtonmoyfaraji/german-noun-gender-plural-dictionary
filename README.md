@@ -1,40 +1,36 @@
-# 🇩🇪 German Noun Gender & Plural Dictionary
+# 📚 German Noun Dictionary Dataset (83K+ Words)
 
-## 📌 A–Z Overview
-
-This repository contains a large-scale **German noun dataset (83,000+ entries)** with grammatical gender and noun forms. It is designed for learners, developers, and NLP systems.
+A high-performance German noun dictionary dataset designed for fast lookup, language learning, and NLP applications.
 
 ---
 
-## 🧠 A — About this project
+## 🚀 Overview
 
-German nouns are difficult because every noun has a gender:
+This dataset contains **83,000+ German nouns** with structured linguistic information:
 
-- der (masculine)
-- die (feminine)
-- das (neutral)
+- Grammatical gender
+- Plural form
+- English meaning
+- Special gender cases (NG, ND)
 
-This dataset helps users learn and use correct gender efficiently.
-
----
-
-## 📦 B — Basic Content
-
-This dictionary includes:
-
-- German nouns
-- Gender classification (M / F / N)
-- Plural forms (for many entries)
-- Compound nouns
-- Extended vocabulary coverage
+It is optimized for:
+- Browser extensions (Tampermonkey, Chrome, Kiwi)
+- Offline dictionaries
+- APIs and backend systems
+- Language learning tools
+- NLP / AI preprocessing
 
 ---
 
-## 🏗️ C — Current Data Format
+## 📦 Data Structure
+
+Each entry in the dataset follows this format:
 
 ```json
 {
-  "Haus": "N",
-  "Frau": "F",
-  "Mann": "M"
+  "word": {
+    "gender": "M | F | N | NG | ND",
+    "plural": "string or null",
+    "meaning": "string or null"
+  }
 }
